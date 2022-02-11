@@ -40,6 +40,8 @@ button:hover {
     margin-top: 0;
     font-weight: 400;
     font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .locations {
     height: 100%;
@@ -71,11 +73,15 @@ button:hover {
 .amenities .popover {
     padding: 10px 0;
     margin-left: -5px;
-    margin-top: 0%;
+    margin-top: -2px;
 }
 
 .amenities .popover ul{
     margin: 0px;
+}
+
+.amenities .popover ul li input {
+    margin: 0 10px;
 }
 
 .locations .popover {
@@ -100,4 +106,8 @@ button:hover {
 .amenities:hover .popover,
 .locations:hover .popover {
     visibility: visible;
+}
+
+.checkbox-amenity {
+    margin-right: 10px;
 }
