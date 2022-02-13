@@ -52,7 +52,7 @@ $.ajax({
         numberBath = 'Bathroom';
       }
 
-      $('.places').append('<article><div class="title_box"><h2>' + info.name + '</h2><div class="price_by_night"><p>$' + info.price_by_night + '</p></div></div><div class="information"><div class="max_guest"><p>' + info.max_guest + '</p><p>' + numberGuest + '</p></div><div class="number_rooms"><p>' + info.number_rooms + '</p><p>' + numberRooms + '</p></div><div class="number_bathrooms"><p>' + info.number_bathrooms + '</p><p>' + numberBath + '</p></div></div><div class="user"><b>Owner: </b> Paola & Diana </div>' + '<div class="description"><p>' + info.description + '</p></div></article>');
+      $('section.places').append('<article><div class="title_box"><h2>' + info.name + '</h2><div class="price_by_night">$' + info.price_by_night + '</div></div><div class="information"><div class="max_guest">' + info.max_guest + ' ' + numberGuest + '</div><div class="number_rooms">' + info.number_rooms + ' ' + numberRooms + '</div><div class="number_bathrooms">' + info.number_bathrooms + ' ' + numberBath + '</div></div><div class="user"><b>Owners: </b> Paola Andrea García Altamirano & Diana Maria Henao Parra</div>' + '<div class="description">' + info.description + '</div></article>');
     }
   }
 });
