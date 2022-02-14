@@ -31,7 +31,7 @@ function searchFilter () {
     success: function (data) {
       $('section.places').empty();
       for (let i = 0; i < data.length; i++) {
-        let info = data[i];
+        const info = data[i];
         let numberGuest = '';
         let numberRooms = '';
         let numberBath = '';
